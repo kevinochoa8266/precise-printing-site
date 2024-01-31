@@ -6,7 +6,7 @@ async function submitToAPI(e) {
   try {
     const response = await fetch(
       // add actions secret
-      "",
+      process.env.ENDPOINT,
       {
         method: "POST",
         body: fd,
