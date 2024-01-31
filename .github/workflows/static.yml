@@ -34,7 +34,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Replace API endpoint in client-side code
-        run: sed -i "s|{{ENDPOINT}}|${{ secrets.ENDPOINT }}|g" ../../data.js
+        run: sed -i "s|{{ENDPOINT}}|${{ secrets.ENDPOINT }}|g" data.js
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
