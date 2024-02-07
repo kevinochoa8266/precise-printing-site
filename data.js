@@ -1,5 +1,6 @@
 async function submitToAPI(e) {
   e.preventDefault();
+  console.log(e);
   const form = document.getElementById("contact-form");
   const fd = new FormData(form);
 
