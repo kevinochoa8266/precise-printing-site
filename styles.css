@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    color: white;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.precise-printing-logo img {
+    width: 10rem;
+}
+
