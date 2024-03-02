@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background: black;
     margin: 0;
     color: white;
     font-family: 'Saira Semi Condensed', sans-serif;
@@ -40,4 +40,94 @@ nav a {
    text-transform: uppercase;
    font-size: 1.6rem;
    font-weight: bold;
+}
+
+/* header {
+    position: fixed;
+    height: 400px;
+}
+
+header::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    transform: skewY(-4.5deg);
+    background: black;
+} */
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 11.4rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 1rem;
+}
+
+header h1 span {
+    color: #46CDF7;
+}
+
+main {
+    display: flex;
+    gap: 9.5rem;
+}
+
+.got-started-heading {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.heading-art {
+    font-size: 4.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.blue-rect {
+    margin-top: 0.65rem;
+}
+
+.left-col {
+    margin-top: 0.65rem;
+    margin-bottom: 28.9rem;
+}
+
+.right-col p {
+    font-size: 1.6rem;
+}
+
+footer {
+    display: flex;
+}
+
+.left-col-footer h1 {
+    font-size: 4.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.left-col-footer h1 span {
+    color: #46CDF7;
+}
+
+.contact a {
+    display: block;
+}
+
+.phone-call {
+    align-items: center;
+    gap: 2rem;
+}
+
+.phone-call span {
+    text-decoration: none;
+    color: white;
 }
