@@ -65,7 +65,8 @@ header h1 {
     font-size: 11.4rem;
     font-weight: bold;
     line-height: 1;
-    margin-top: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 15rem;
 }
 
 header h1 span {
@@ -85,6 +86,7 @@ main {
 .heading-art {
     font-size: 4.7rem;
     text-transform: uppercase;
+    color: white;
     font-weight: bold;
     line-height: 1;
     margin-top: 0;
@@ -96,15 +98,18 @@ main {
 
 .left-col {
     margin-top: 0.65rem;
-    margin-bottom: 28.9rem;
+    margin-bottom: 15rem;
 }
 
 .right-col p {
     font-size: 1.6rem;
+    color: white;
 }
 
-footer {
+.footer-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .left-col-footer h1 {
@@ -122,12 +127,27 @@ footer {
     display: block;
 }
 
-.phone-call {
+.contact .phone-number {
+    display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.1rem;
+    margin-bottom: 0.7rem;
 }
 
-.phone-call span {
-    text-decoration: none;
+.phone-number span {
     color: white;
+    font-size: 1.6rem;
 }
+
+.contact .email {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+    margin-bottom: 6.2rem;
+}
+
+.email span {
+    color: white;
+    font-size: 1.6rem;
+}
+
