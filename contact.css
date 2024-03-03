@@ -35,11 +35,11 @@ nav ul {
 }
 
 nav a {
-   text-decoration: none;
-   color: white;
-   text-transform: uppercase;
-   font-size: 1.6rem;
-   font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 header h1 {
@@ -48,46 +48,43 @@ header h1 {
     font-weight: bold;
     line-height: 1;
     margin-top: 6rem;
-    margin-bottom: 15rem;
+    margin-bottom: 15.1rem;
+    text-align: center;
 }
 
 header h1 span {
     color: #46CDF7;
 }
 
-main {
-    display: flex;
-    gap: 9.5rem;
-}
-
-.got-started-heading {
-    display: flex;
-    gap: 1.4rem;
-}
-
-.heading-art {
+main h2 {
     font-size: 4.7rem;
     text-transform: uppercase;
-    color: white;
     font-weight: bold;
-    line-height: 1;
-    margin-top: 0;
+    text-align: center;
 }
 
-.blue-rect {
-    margin-top: 0.65rem;
+.container {
+    display: flex;
+    justify-content: center;
 }
 
-.left-col {
-    margin-top: 0.65rem;
-    margin-bottom: 15rem;
+input {
+    width: 44rem;
+    margin-bottom: 10px;
+    height: 6rem;
 }
 
-.right-col p {
-    font-size: 1.6rem;
-    color: white;
+textarea {
+    width: 44rem;
 }
 
+label {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1.3rem;
+}
 footer {
     display: flex;
     align-items: center;
@@ -155,4 +152,3 @@ footer {
 .powered-by span {
     color: #46CDF7;
 }
-
