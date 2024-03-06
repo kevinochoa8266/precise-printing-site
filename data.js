@@ -21,7 +21,10 @@ async function submitToAPI(e) {
     console.log("This is the data: ", data["message"]);
 
     if (response.status === 200) {
-      alert("Successful");
+      var messageContainer = document.getElementById("messageContainer");
+      var messageHeading = document.createElement("h1");
+      messageHeading.textContent = "Message was sent";
+      messageContainer.appendChild(messageHeading);
       form.reset();
     } else {
       alert("Unsuccessful");
