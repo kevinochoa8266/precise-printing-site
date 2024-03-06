@@ -25,12 +25,10 @@ async function submitToAPI(e) {
 
     } else {
       alert("Unsuccessful");
-      // Optionally, you might want to log the error or additional details from the response
-      console.error(data.error); // Access the error message if provided in the response
+      console.error(data.error);
     }
   } catch (error) {
-    console.error("Error:", error);
-    // Handle any unexpected errors here
+    console.error("Error: ", error);
     alert("An error occurred. Please try again later.");
   }
 }
