@@ -6,8 +6,7 @@ async function submitToAPI(e) {
 
   try {
     const response = await fetch(
-      // add actions secret
-      "{{ENDPOINT}}",
+      "https://enyrcyxow4.execute-api.us-east-1.amazonaws.com/stage-1",
       {
         method: "POST",
         body: fd,
