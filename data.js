@@ -1,6 +1,5 @@
 async function submitToAPI(e) {
   e.preventDefault();
-  console.log(e);
   const form = document.getElementById("contact-form");
   const fd = new FormData(form);
 
@@ -13,18 +12,17 @@ async function submitToAPI(e) {
       }
     );
 
-    console.log("This is the response: ", response);
-
     const data = await response.json();
 
-    console.log("This is the data: ", data["message"]);
-
     if (response.status === 200) {
+      form.style.display = "none";
+      var submitDeatils = document.getElementById("submit-details");
+      submitDeatils.style.display = "none";
       var messageContainer = document.getElementById("messageContainer");
       var messageHeading = document.createElement("h1");
-      messageHeading.textContent = "Message was sent";
+      messageHeading.textContent = "Message was sent!";
       messageContainer.appendChild(messageHeading);
-      form.reset();
+
     } else {
       alert("Unsuccessful");
       // Optionally, you might want to log the error or additional details from the response
