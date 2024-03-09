@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    cursor: default;
 }
 
 body {
@@ -22,6 +23,11 @@ body {
 
 .precise-printing-logo img {
     width: 10rem;
+    transition: filter 0.3s ease;
+}
+
+.precise-printing-logo img:hover {
+    filter: brightness(80%);
 }
 
 nav {
@@ -40,6 +46,11 @@ nav a {
     text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: bold;
+    transition: filter 0.3s ease;
+}
+
+nav a:hover {
+    filter: brightness(80%);
 }
 
 header h1 {
@@ -87,6 +98,7 @@ input::placeholder {
 textarea {
     width: 44rem;
     margin-bottom: 2rem;
+    min-width: 44rem;
     max-width: 44rem;
     max-height: 30rem;
     border-radius: 0.5rem;
@@ -134,6 +146,11 @@ label {
     color: black;
     cursor: pointer;
     margin-bottom: 7rem;
+    transition: filter 0.3s ease;
+}
+
+.file-input label:hover {
+    filter:brightness(85%);
 }
 
 .file-input label img {
@@ -150,6 +167,11 @@ button {
     font-weight: bold;
     background-color: #46CDF7;
     color: black;
+    transition: filter 0.3s ease;
+}
+
+button:hover {
+    filter:brightness(90%);
 }
 
 .button-container {
@@ -218,6 +240,14 @@ footer {
     margin-bottom: 7rem;
 }
 
+.instagram {
+    transition: filter 0.3s ease;
+}
+
+.instagram:hover {
+    filter:brightness(80%);
+}
+
 .powered {
     display: flex;
     justify-content: center;
@@ -229,6 +259,11 @@ footer {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    transition: filter 0.3s ease;
+}
+
+.powered-by:hover {
+    filter:brightness(80%);
 }
 
 .powered-by span {
