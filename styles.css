@@ -71,6 +71,11 @@ main {
     gap: 9.5rem;
 }
 
+.in-action {
+    width:55rem;
+    height:auto;
+}
+
 .got-started-heading {
     display: flex;
     gap: 1.4rem;
@@ -95,9 +100,10 @@ main {
 }
 
 .right-col p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: white;
+    line-height: 2;
 }
 
 .p-precise {
