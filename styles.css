@@ -74,6 +74,7 @@ main {
 .in-action {
     width:55rem;
     height:auto;
+    border-radius: 2px;
 }
 
 .got-started-heading {
