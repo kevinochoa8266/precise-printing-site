@@ -157,6 +157,13 @@ label {
     width: 3rem;
 }
 
+.error-message {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
 button {
     width: 30rem;
     height: 5rem;

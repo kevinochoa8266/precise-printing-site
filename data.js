@@ -1,10 +1,25 @@
 function validateForm() {
+  let isValid = true;
   let actualName = document.getElementById("full-name").value;
-  var expectedName = /^[a-zA-ZÀ-ÿ-]+(?:\s[a-zA-ZÀ-ÿ-]+)*$/;
-  if (!expectedName.test(actualName)) {
-    alert("Name can not be less than 2 characters");
+  let actualEmail = document.getElementById("email").value;
+  let actualMessage = document.getElementById("message").value
+
+  if (!/^[a-zA-ZÀ-ÿ ,.'-]{1,30}$/.test(actualName) && actualName !== '') {
+    document.getElementById("full-name").style.color = 'red';
+    document.getElementById('name-error').innerText = 'Name must contain only letters and spaces!';
+  } else {
+    document.getElementById('name-error').innerText = '';
   }
-  return;
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(actualEmail) && actualEmail !== '') {
+    document.getElementById("email").style.color = 'red';
+    document.getElementById('email-error').innerText = 'Invalid email format.';
+  } else {
+    document.getElementById('email-error').innerText = '';
+  }
+
+
+  return isValid;
 }
 
 async function submitToAPI(e) {
