@@ -110,7 +110,7 @@ textarea {
 textarea::placeholder {
     font-weight: bold;
     opacity: 0.5;
-    color: black;     
+    color: black;    
 }
 
 textarea:focus, input:focus {

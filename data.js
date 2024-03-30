@@ -9,6 +9,7 @@ function validateForm() {
     document.getElementById('name-error').innerText = 'Name must contain only letters and spaces!';
   } else {
     document.getElementById('name-error').innerText = '';
+    document.getElementById("full-name").style.color = 'black';
   }
 
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(actualEmail) && actualEmail !== '') {
@@ -16,6 +17,7 @@ function validateForm() {
     document.getElementById('email-error').innerText = 'Invalid email format.';
   } else {
     document.getElementById('email-error').innerText = '';
+    document.getElementById("email").style.color = 'black';
   }
 
 
