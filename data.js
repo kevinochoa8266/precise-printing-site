@@ -2,7 +2,9 @@ function uploadFiles() {
   const fileInput = document.getElementById("file");
   const files = fileInput.files;
 
-  if (files.length >= 1) {
+  if (files.length == 1) {
+    document.getElementById("file-status").innerText = `${files.length} file uploaded: `;
+  } else if (files.length > 1) {
     document.getElementById("file-status").innerText = `${files.length} files uploaded: `;
   }
 }
