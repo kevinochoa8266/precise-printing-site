@@ -100,6 +100,7 @@ textarea {
     margin-bottom: 2rem;
     min-width: 44rem;
     max-width: 44rem;
+    min-height: 30rem;
     max-height: 30rem;
     border-radius: 0.5rem;
     border: none;
@@ -137,6 +138,7 @@ label {
     position: relative;
     width: 44.5rem;
     height: 5rem;
+    margin-bottom: 2rem;
     border-radius: 0.5rem;
     border: none;
     background: white;
@@ -145,7 +147,6 @@ label {
     justify-content: center;
     color: black;
     cursor: pointer;
-    margin-bottom: 7rem;
     transition: filter 0.3s ease;
 }
 
@@ -159,6 +160,12 @@ label {
 
 .error-message {
     color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#file-status {
     font-size: 2rem;
     font-weight: bold;
     margin-top: 0;
@@ -184,6 +191,7 @@ button:hover {
 .button-container {
     display: flex;
     justify-content: center;
+    margin-top: 7rem;
     margin-bottom: 17rem;
 }
 

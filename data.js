@@ -1,3 +1,13 @@
+function uploadFiles() {
+  const fileInput = document.getElementById("file");
+  const files = fileInput.files;
+
+  if (files.length >= 1) {
+    document.getElementById("file-status").innerText = `${files.length} files uploaded: `;
+  }
+}
+
+
 function validateForm() {
   let isValid = true;
   let actualName = document.getElementById("full-name").value;
