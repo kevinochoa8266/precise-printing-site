@@ -330,6 +330,10 @@ footer {
       width: 100%;
     }
 
+    nav {
+        margin-right: 5rem;
+    }
+
     nav a {
         font-size: 1.4rem;
     }
@@ -354,6 +358,7 @@ footer {
 
     main {
         margin-bottom: 7.5rem;
+        margin-right: 5rem;
     }
 
     .in-action {
