@@ -1,11 +1,15 @@
 function uploadFiles() {
   const fileInput = document.getElementById("file");
-  const files = fileInput.files;
+  const file = fileInput.files;
+  console.log(file);
 
-  if (files.length == 1) {
-    document.getElementById("file-status").innerText = `${files.length} file uploaded: `;
-  } else if (files.length > 1) {
-    document.getElementById("file-status").innerText = `${files.length} files uploaded: `;
+  if (file.length == 1) {
+    document.getElementById("file-status").innerText = `${file.length} File Uploaded`;
+    document.getElementById("file-name").style.color = '#46CDF7';
+    document.getElementById("file-name").innerText = `${file[0].name}`;
+  } else {
+    document.getElementById("file-status").innerText = ``;
+    document.getElementById("file-name").innerText = ``;
   }
 }
 
@@ -42,6 +46,22 @@ async function submitToAPI(e) {
   const form = document.getElementById("contact-form");
   const fd = new FormData(form);
 
+  const full_name = fd.get("name");
+  const email = fd.get("email");
+
+  if (full_name == "") {
+    document.getElementById("full-name").style.color = 'red';
+    document.getElementById('name-error').innerText = 'Please enter your full name.';
+    return;
+  }
+
+  if (email == "") {
+    document.getElementById("email").style.color = 'red';
+    document.getElementById('email-error').innerText = 'Please enter a valid email.';
+    return;
+  }
+  
+
   try {
     const response = await fetch(
       "https://enyrcyxow4.execute-api.us-east-1.amazonaws.com/stage-1",
@@ -57,18 +77,31 @@ async function submitToAPI(e) {
 
     if (response.status === 200) {
       form.style.display = "none";
-      var submitDeatils = document.getElementById("submit-details");
-      submitDeatils.style.display = "none";
+      var submitDetails = document.getElementById("submit-details");
+      submitDetails.style.display = "none";
       var messageContainer = document.getElementById("messageContainer");
       var messageHeading = document.createElement("h1");
       messageHeading.textContent = "Message was sent!";
       messageContainer.appendChild(messageHeading);
     } else {
-      alert("Unsuccessful");
       console.error(data.error);
+      form.style.display = "none";
+      var submitDetails = document.getElementById("submit-details");
+      submitDetails.style.display = "none";
+      var messageContainer = document.getElementById("messageContainer");
+      var messageHeading = document.createElement("h1");
+      messageHeading.textContent = "Your request could not be processed at this time. Please email us directly at preciseprintingcorp@gmail.com";
+      messageContainer.appendChild(messageHeading);
+
     }
   } catch (error) {
     console.error("Error: ", error);
-    alert("An error occurred. Please try again later.");
+    form.style.display = "none";
+    var submitDetails = document.getElementById("submit-details");
+    submitDetails.style.display = "none";
+    var messageContainer = document.getElementById("messageContainer");
+    var messageHeading = document.createElement("h1");
+    messageHeading.textContent = "Your request could not be processed at this time. Please email us directly at preciseprintingcorp@gmail.com";
+    messageContainer.appendChild(messageHeading);
   }
 }

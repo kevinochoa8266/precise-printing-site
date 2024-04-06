@@ -42,13 +42,13 @@
                 <div>
                     <label for="full-name">Name</label>
                     <input required type="text" id="full-name" name="name" placeholder="Full name" autocomplete="off" oninput="validateForm()" />
-                    <p id="name-error"></p>
+                    <p id="name-error" class="error-message"></p>
                 </div>
             
                 <div>
                     <label for="email">Email</label>
                     <input required type="email" id="email" name="email" placeholder="Email" autocomplete="off" oninput="validateForm()"/>
-                    <p id="email-error"></p>
+                    <p id="email-error" class="error-message"></p>
                 </div>
             
                 <div>
@@ -57,9 +57,10 @@
                 </div>
             
                 <div class="file-input">
-                    <label for="file"><img src="assets/images/upload-file-svgrepo-com.svg" alt="">upload files</label>
-                    <input type="file" id="file" name="file" multiple accept=".jpg, .jpeg, .png, .pdf" oninput="uploadFiles()"/>
+                    <label for="file"><img src="assets/images/upload-file-svgrepo-com.svg" alt="">upload design</label>
+                    <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf" oninput="uploadFiles()"/>
                     <p id="file-status"></p>
+                    <p id="file-name"></p>
                 </div>
 
                 <div class="button-container">
