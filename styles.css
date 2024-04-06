@@ -331,7 +331,7 @@ footer {
     }
 
     nav {
-        margin-right: 5rem;
+        margin-right: 2rem;
     }
 
     nav a {
@@ -354,15 +354,16 @@ footer {
         font-weight: 500;
         color: white;
         line-height: 2;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     main {
         margin-bottom: 7.5rem;
-        margin-right: 5rem;
     }
 
     .in-action {
-        max-width:100%;
+        width:90%;
         height:auto;
         border-radius: 2px;
     }
