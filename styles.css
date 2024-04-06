@@ -330,6 +330,10 @@ footer {
       width: 100%;
     }
 
+    .precise-printing-logo {
+        margin-left: 1rem;
+    }
+
     nav {
         margin-right: 2rem;
     }
