@@ -54,7 +54,6 @@ header h1 {
     font-weight: bold;
     line-height: 1;
     margin-top: 6rem;
-    margin-bottom: 15rem;
 }
 
 header h1 span {
@@ -64,12 +63,15 @@ header h1 span {
 main {
     display: flex;
     gap: 9.5rem;
+    margin-bottom: 15rem;
+    margin-top: 10rem;
 }
 
 .in-action {
-    width:55rem;
-    height:auto;
-    border-radius: 2px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px; 
+    flex: 1;
 }
 
 .got-started-heading {
@@ -90,9 +92,12 @@ main {
     margin-top: 0.65rem;
 }
 
-.left-col {
+/* .left-col {
     margin-top: 0.65rem;
     margin-bottom: 15rem;
+} */
+.right-col {
+    flex: 1;
 }
 
 .right-col p {
@@ -221,6 +226,12 @@ footer {
     .blue-rect svg {
         height: 6.5rem;
     }
+
+    .in-action {
+        max-width:100%;
+        height:auto;
+        border-radius: 2px;
+    }
     
     
   }
@@ -258,18 +269,23 @@ footer {
         justify-content: center;
     }
 
-    .left-col {
+    /* .left-col {
         margin-bottom: 2rem;
-    }
+    } */
 
-    .right-col p {
+    /* .right-col p {
         margin-top: 0;
-        width: 55rem;
         text-align: center;
-    }
+    } */
 
     .left-col-footer h1 {
         font-size: 2.7rem;
+    }
+
+    .in-action {
+        max-width:100%;
+        height:auto;
+        border-radius: 2px;
     }
   }
   
@@ -278,6 +294,12 @@ footer {
     .container-responsive {
       max-width: 640px;
     }
+
+    .in-action {
+        max-width:100%;
+        height:auto;
+        border-radius: 2px;
+    }
   }
   
   /* sm */
@@ -285,12 +307,24 @@ footer {
     .container-responsive {
       max-width: 475px;
     }
+
+    .in-action {
+        max-width:100%;
+        height:auto;
+        border-radius: 2px;
+    }
   }
   
   /* xs */
   @media (max-width: 475px) {
     .container-responsive {
       width: 100%;
+    }
+
+    .in-action {
+        max-width:100%;
+        height:auto;
+        border-radius: 2px;
     }
   }
 
