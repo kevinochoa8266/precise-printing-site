@@ -40,8 +40,16 @@ function validateForm() {
   return isValid;
 }
 
+let isSubmitting = false;
+
 async function submitToAPI(e) {
   e.preventDefault();
+
+  if (isSubmitting) {
+    return;
+  }
+
+  isSubmitting = true;
 
   const form = document.getElementById("contact-form");
   const fd = new FormData(form);
@@ -83,6 +91,7 @@ async function submitToAPI(e) {
       var messageHeading = document.createElement("h1");
       messageHeading.textContent = "Message was sent!";
       messageContainer.appendChild(messageHeading);
+      isSubmitting = false;
     } else {
       console.error(data.error);
       form.style.display = "none";
@@ -92,7 +101,7 @@ async function submitToAPI(e) {
       var messageHeading = document.createElement("h1");
       messageHeading.textContent = "Your request could not be processed at this time. Please email us directly at preciseprintingcorp@gmail.com";
       messageContainer.appendChild(messageHeading);
-
+      isSubmitting = false;
     }
   } catch (error) {
     console.error("Error: ", error);
@@ -103,5 +112,6 @@ async function submitToAPI(e) {
     var messageHeading = document.createElement("h1");
     messageHeading.textContent = "Your request could not be processed at this time. Please email us directly at preciseprintingcorp@gmail.com";
     messageContainer.appendChild(messageHeading);
+    isSubmitting = false;
   }
 }
