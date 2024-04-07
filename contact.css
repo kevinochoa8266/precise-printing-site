@@ -73,21 +73,17 @@ main h2 {
 
 .container {
     width: 100%;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center;
-    justify-content: center; /* Center children vertically */
 }
 
 input {
     width: 100%;
+    box-sizing: border-box;
     margin-bottom: 2rem;
     height: 5rem;
     border-radius: 0.5rem;
     border: none;
     font-size: 2rem;
     font-weight: bold;
-    flex: 1;
 }
 
 input::placeholder {
@@ -98,6 +94,7 @@ input::placeholder {
 
 textarea {
     width: 100%;
+    box-sizing: border-box;
     margin-bottom: 2rem;
     min-height: 30rem;
     max-height: 30rem;
@@ -303,7 +300,6 @@ footer {
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid red;
 }
 
  /* xl */
@@ -391,6 +387,38 @@ footer {
   @media (max-width: 475px) {
     .container-responsive {
       width: 100%;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 6.5rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+
+    main {
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+
+    .button-container {
+        margin-bottom: 0;
+    }
+
+    input, textarea {
+        width: 97%;
+
+    }
+
+    .file-input label {
+        width: 97%
     }
 
   }
