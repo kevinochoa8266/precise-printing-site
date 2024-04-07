@@ -238,7 +238,6 @@ footer {
 
     header h1 {
         font-size: 8.4rem;
-        text-align: center;
         margin-bottom: 10rem;
     }
 
@@ -255,13 +254,11 @@ footer {
 
     .got-started-heading {
         gap: 0;
-        justify-content: center;
     }
 
     main {
         display: grid;
         gap: 0;
-        text-align: center;
     }
   }
   
@@ -273,12 +270,11 @@ footer {
 
     header h1 {
         font-size: 6.4rem;
-        text-align: center;
         margin-bottom: 10rem;
     }
 
     .heading-art {
-        font-size: 2.4rem;
+        font-size: 2.7rem;
         margin-top: 1rem;
         margin-bottom: 0;
     }
@@ -292,22 +288,15 @@ footer {
 
     .got-started-heading {
         gap: 0;
-        justify-content: center;
     }
 
     main {
         display: grid;
         gap: 0;
-        text-align: center;
     }
 
     footer {
-        display: grid;
-        text-align: center;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
+        display: grid
     }
 
     .left-col-footer h1 {
@@ -315,7 +304,7 @@ footer {
     }
 
     .contact .email {
-        margin-bottom: 3rem;
+        margin-bottom: 0.7rem;
         margin-left: 0.2rem;
     }
 
@@ -332,12 +321,8 @@ footer {
       width: 100%;
     }
 
-    .precise-printing-logo {
-        margin-left: 1rem;
-    }
-
     nav {
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     nav a {
@@ -350,18 +335,14 @@ footer {
     }
 
     .heading-art {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
         margin-top: 1rem;
         margin-bottom: 0;
     }
 
     .right-col p {
         font-size: 1.4rem;
-        font-weight: 500;
-        color: white;
-        line-height: 2;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     main {
