@@ -72,7 +72,9 @@ main h2 {
 }
 
 .container {
+    display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 input {
@@ -84,6 +86,7 @@ input {
     border: none;
     font-size: 2rem;
     font-weight: bold;
+    flex: 1;
 }
 
 input::placeholder {
@@ -102,6 +105,7 @@ textarea {
     border: none;
     font-size: 2rem;
     font-weight: bold; 
+    flex: 1;
 }
 
 textarea::placeholder {
@@ -381,6 +385,10 @@ footer {
     .powered-by {
         font-size: 0.8rem;
     }
+
+    #messageContainer {
+        font-size: 1.5rem;
+    }
   }
   
   /* xs */
@@ -417,8 +425,16 @@ footer {
 
     }
 
+    label {
+        font-size: 1.8rem;
+    }
+
     .file-input label {
         width: 97%
+    }
+
+    #messageContainer {
+        font-size: 1rem;
     }
 
   }
