@@ -421,7 +421,7 @@ footer {
     }
 
     input, textarea {
-        width: 97%;
+        width: 95%;
 
     }
 
@@ -430,7 +430,7 @@ footer {
     }
 
     .file-input label {
-        width: 97%
+        width: 95%
     }
 
     #messageContainer {
