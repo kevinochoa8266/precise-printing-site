@@ -256,6 +256,10 @@ footer {
         gap: 0;
     }
 
+    .right-col p {
+        padding-right: 5rem;
+    }
+
     main {
         display: grid;
         gap: 0;
@@ -280,10 +284,8 @@ footer {
     }
 
     .right-col p {
-        font-size: 1.6rem;
-        font-weight: 500;
-        color: white;
-        line-height: 2;
+        padding-right: 1rem;
+        margin-bottom: 0;
     }
 
     .got-started-heading {
@@ -293,7 +295,7 @@ footer {
     main {
         display: grid;
         gap: 0;
-        margin-bottom: 7.5rem;
+        margin-bottom: 10rem;
     }
 
     footer {
@@ -302,6 +304,11 @@ footer {
 
     .left-col-footer h1 {
         font-size: 4.4rem;
+        margin-top: 0;
+    }
+
+    .right-col-footer {
+        margin-bottom: 2rem;
     }
 
     .contact .phone-number {
@@ -311,6 +318,10 @@ footer {
     .contact .email {
         margin-bottom: 1rem;
         margin-left: 0.2rem;
+    }
+
+    .powered-by {
+        font-size: 0.8rem;
     }
 
     .in-action {
@@ -341,7 +352,7 @@ footer {
     }
 
     .heading-art {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         margin-top: 1rem;
         margin-bottom: 0;
     }
@@ -349,10 +360,12 @@ footer {
     .right-col p {
         font-size: 1.4rem;
         margin-right: 1rem;
+        padding-right: 6rem;
     }
 
     main {
         margin-top: 7rem;
+        margin-bottom: 7rem;
     }
 
     .in-action {
