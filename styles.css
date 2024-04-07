@@ -299,7 +299,7 @@ footer {
     }
 
     footer {
-        display: grid
+        display: grid;
     }
 
     .left-col-footer h1 {
@@ -307,8 +307,15 @@ footer {
         margin-top: 0;
     }
 
+    .left-col-footer {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
     .right-col-footer {
         margin-bottom: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     .contact .phone-number {
@@ -337,8 +344,12 @@ footer {
       width: 100%;
     }
 
+    .precise-printing-logo {
+        margin-left: 1.5rem;
+    }
+
     nav {
-        margin-right: 1rem;
+        margin-right: 1.5rem;
     }
 
     nav a {
@@ -349,18 +360,23 @@ footer {
         font-size: 5.4rem;
         margin-top: 2rem;
         margin-bottom: 0;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     .heading-art {
         font-size: 2.1rem;
         margin-top: 1rem;
         margin-bottom: 0;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     .right-col p {
         font-size: 1.4rem;
-        margin-right: 1rem;
-        padding-right: 6rem;
+        padding-right: 3rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     main {
@@ -372,6 +388,8 @@ footer {
         width:90%;
         height:auto;
         border-radius: 2px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
   }
 
