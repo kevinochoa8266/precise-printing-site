@@ -18,7 +18,7 @@
 <body>
 
     <div class="wrapper">
-        <header>
+        <header class="container-responsive">
             <!--when hosting with AWS change to site URL-->
             <div class="nav-bar">
                 <a href="index.html" class="precise-printing-logo"><img src="assets/images/pp_logo_solid.svg"
@@ -34,12 +34,12 @@
             <h1>Get in <span>touch</span></h1>
         </header>
 
-        <main>
+        <main class="container-responsive">
            <!--this will be the input form-->
            <h2 id="submit-details">Submit your details</h2>
            <div class="container">
             <form id="contact-form" spellcheck="false">
-                <div>
+                <div class="name-container">
                     <label for="full-name">Name</label>
                     <input required type="text" id="full-name" name="name" placeholder="Full name" autocomplete="off" oninput="validateForm()" />
                     <p id="name-error" class="error-message"></p>
@@ -71,7 +71,7 @@
             <div id="messageContainer"></div>
         </main> 
 
-        <footer>
+        <footer class="container-responsive">
             <div class="left-col-footer">
                 <h1>Ready to get<br><span>started</span> today?</h1>
                 <div class="contact">
