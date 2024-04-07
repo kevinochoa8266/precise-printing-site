@@ -94,6 +94,18 @@ main {
     margin-top: 0.65rem;
 }
 
+.blue-rect:hover {
+    cursor: default;
+}
+
+.blue-rect svg:hover {
+    cursor: default;
+}
+
+.right-col:hover {
+    cursor: default;
+}
+
 .right-col {
     flex: 1;
 }
