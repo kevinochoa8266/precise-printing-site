@@ -407,6 +407,11 @@ footer {
         margin-right: 1.5rem;
     }
 
+    .left-col {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
     main {
         margin-top: 7rem;
         margin-bottom: 7rem;
